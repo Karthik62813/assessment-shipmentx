@@ -1,0 +1,104 @@
+  
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .choices {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  /* Correct answer styling */
+.correct {
+    background-color: #4CAF50 !important;  /* Green background */
+    color: white !important;          
+  }
+  
+  /* Incorrect answer styling */
+  .incorrect {
+    background-color: #f44336 !important;  /* Red background */
+    color: white !important;              
+  }
+  
+  /* Styling for the choice buttons (ensure default background is neutral) */
+  .choice {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change color on hover for better interactivity */
+  .choice:hover {
+    background-color: #ddd;
+  }
+  
+  /* Ensure transition between states is smooth */
+  .choice.correct, .choice.incorrect {
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  #progressBarFull {
+    background-color: #5cb85c;
+    height: 100%;
+    border-radius: 10px;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+  #progressText {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-weight: bold;
+  }
