@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f5f2eb; /* Slightly warm background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: #eae5da; /* Lighter background for input */
+    padding: 10px;
+}
+
+input {
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: #4a4a4a;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #78c2d0;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #66b3bb;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    max-height: 400px; /* Limit height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+}
+
+li {
+    background-color: #f9f6ee;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #4a4a4a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;  /* Style for the scrollbar thumb */
+    border-radius: 4px;
+}
+
+ul::-webkit-scrollbar-track {
+    background-color: #f0f0f0;  /* Style for the scrollbar track */
+}
+
+
+li .task-text {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #b3b3b3;
+}
+
+li .delete-btn {
+    background-color: #EAE5DA;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #e67e7e;
+}
+
+li .delete-btn:hover {
+    color: #ff5252;
+}
+
+li input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #b0b0b0;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+li input[type="checkbox"]:checked {
+    background-color: #e19b5b; /* Checkmark color */
+    border: none;
+    position: relative;
+}
+
+li input[type="checkbox"]:checked:after {
+    content: "✓";
+    position: absolute;
+    left: 4px;
+    top: 0.1px;
+    font-size: 16px;
+    color: white;
+}
