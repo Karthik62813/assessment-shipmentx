@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="pricing-table">
+        <h1>Our Pricing Plans</h1>
+        <div class="plans">
+
+            <!-- Basic Plan -->
+            <div class="plan">
+                <h2>Basic</h2>
+                <p class="plan-description">Essential features for personal use.</p>
+                <p class="price">$10/mo</p>
+                <ul class="features">
+                    <li>1 User</li>
+                    <li>5GB Storage</li>
+                    <li>Email Support</li>
+                    <li>Access to basic features</li>
+                    <li>Community support</li>
+                </ul>
+                <button class="signup-btn" onclick="signUp('Basic')">Sign Up</button>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="plan">
+                <h2>Standard</h2>
+                <p class="plan-description">Perfect for small teams.</p>
+                <p class="price">$20/mo</p>
+                <ul class="features">
+                    <li>5 Users</li>
+                    <li>50GB Storage</li>
+                    <li>Priority Email Support</li>
+                    <li>Access to all features</li>
+                    <li>Customizable options</li>
+                </ul>
+                <button class="signup-btn" onclick="signUp('Standard')">Sign Up</button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="plan">
+                <h2>Premium</h2>
+                <p class="plan-description">Best for large teams and enterprises.</p>
+                <p class="price">$50/mo</p>
+                <ul class="features">
+                    <li>Unlimited Users</li>
+                    <li>200GB Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Advanced features</li>
+                    <li>Dedicated account manager</li>
+                </ul>
+                <button class="signup-btn" onclick="signUp('Premium')">Sign Up</button>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
